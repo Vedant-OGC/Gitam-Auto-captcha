@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "GITAM AutoCaptcha (Rebuilt)",
+  "version": "1.0.0",
+  "description": "Improved GITAM AutoCaptcha with better error handling, captcha refresh support, and clearer architecture.",
+  "author": "Original: nan__x3, igharsha7 · Rebuilt variant by Newton",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://login.gitam.edu/*"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "main.js"
+      ],
+      "matches": [
+        "*://*.gitam.edu/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GITAM AutoCaptcha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="font-display antialiased">
+    <div class="popup-container glass-panel">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-brand">
+                <img src="g image.png" alt="" class="header-icon">
+                <div class="header-text">
+                    <h1 class="header-title">GITAM AutoCaptcha</h1>
+                    <span class="header-subtitle">built by Newton</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="settings-btn">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Status Cards -->
+        <div class="status-cards">
+            <div class="status-card status-card--credentials">
+                <div class="status-card__icon">
+                    <span class="material-symbols-outlined fill-1">lock</span>
+                </div>
+                <span class="status-card__title">Credentials</span>
+                <span class="status-card__sub">Login details</span>
+            </div>
+            <div class="status-card status-card--autocaptcha">
+                <div class="status-card__icon">
+                    <span class="material-symbols-outlined fill-1">auto_awesome</span>
+                </div>
+                <span class="status-card__title">AutoCaptcha</span>
+                <span class="status-card__sub">Auto-fill on login</span>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" class="input" autocomplete="username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" class="input" autocomplete="current-password">
+            </div>
+
+            <div class="toggle-row">
+                <label for="pauseToggle" class="toggle-label">AutoCaptcha</label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pauseToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn--primary" id="save">Save Credentials</button>
+                <button type="button" class="btn btn--secondary" id="clear" disabled>Clear Credentials</button>
+            </div>
+
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Ready to solve captchas...</span>
+            </div>
+
+            <p class="message" id="status"></p>
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
