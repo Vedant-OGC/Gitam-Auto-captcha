@@ -3,7 +3,7 @@
   "name": "GITAM AutoCaptcha (Rebuilt)",
   "version": "1.0.0",
   "description": "Improved GITAM AutoCaptcha with better error handling, captcha refresh support, and clearer architecture.",
-  "author": "Original: nan__x3, igharsha7 · Rebuilt variant by Newton",
+  "author": "Rebuilt variant by Newton",
   "action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
