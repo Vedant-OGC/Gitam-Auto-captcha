@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = usernameField.value.trim();
         const password = passwordField.value.trim();
 
+        if (!username || !password) {
+            showStatus("Please enter both username and password.", "#fc8181");
+            return;
+        }
+
         chrome.runtime.sendMessage(
             { type: "saveCredentials", username, password },
             (response) => {
@@ -105,6 +110,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2000);
     }
 });
-
-
-# Updated: 2026-01-04

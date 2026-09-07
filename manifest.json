@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "GITAM AutoCaptcha (Rebuilt)",
-  "version": "1.0.0",
-  "description": "Improved GITAM AutoCaptcha with better error handling, captcha refresh support, and clearer architecture.",
-  "author": "Rebuilt variant by Newton",
+  "name": "GITAM AutoCaptcha",
+  "version": "1.1.1",
+  "description": "GITAM AutoCaptcha with better error handling, captcha refresh support, and clearer architecture.",
+  "author": "Newton Mishra",
   "action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"

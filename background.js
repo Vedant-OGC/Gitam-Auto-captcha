@@ -60,6 +60,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         return true;
     }
 });
-
-
-# Updated: 2026-03-29
